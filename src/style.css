@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+}
+.App{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    background-color: rgb(214, 218, 216);
+}
+@font-face {
+    font-family: Montserrat; /* Name your font family */
+               src: url('../src/montserrat/Montserrat-Light.ttf'); /* Locate the .ttf file within your directory*/
+  }
+body{
+    font-family: Montserrat;
+}
+
+
+/* ------header styling-------- */
+
+
+header{
+    background-color: white;
+    margin: 0;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.image-container{
+    text-align: center;
+    
+}
+.image-container img{
+    height: 80px;
+}
+
+
+/* ----------content styling--------- */
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+@media all and (max-width: 700px){
+    .App{
+        background-color: white;
+    }
+    
+    .main{
+        margin-top: 0px;
+        width: 100%;
+    }
+    .green{
+        width: 100%;
+    }
+}
+.main p{
+    margin: 3px;
+    text-align: center;
+}
+.green{
+    background-color: rgba(1, 56, 13, 0.877);
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 86px;
+    padding-right: 86px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.green p{
+    margin: 8px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: rgb(240, 238, 238); 
+}
+.one{
+    font-weight: 700;
+}
+.two{
+    font-weight: 500;
+    font-size: 14px; 
+}
+
+.image img{
+    position: relative;
+    top: -50px;
+    height: 90px;
+    /* border-radius: 10px; */
+    border: solid 2px white;
+    /* border-color: white; */
+}
+.title{
+    height: 8px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+.title p{
+    position: relative;
+    top: -40px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.name{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+.occupation{
+    font-size: 12px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+}
+.icon img{
+    height: 20px;
+}
+.icon button{
+    padding: 5px 7px 2px 7px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px gray;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.icon button:hover{
+    background-color: grey;
+}
+
+
+/* --------grid styling {grid is in content.jsv}------- */
+
+
+.grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 40px 60px;
+    margin: 30px 10px 190px 54px ;
+    row-gap: 4px;
+    column-gap: 9px;
+    width: 90%;
+    align-items: center;
+}
+@media all and (max-width:700px){
+    .grid{
+        width: 50%;
+        margin-left: 90px;
+    }
+}
+.grid button{
+    border: solid 1px grey;
+    border-radius: 9px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px gray;
+    transition: box-shadow 0.3s ease
+}
+.grid img{
+    height: 20px;
+    padding: 6px;
+    padding-left: 3px;
+
+}
+.grid p{
+    text-align: left;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 560;
+    margin-bottom: 5px;
+    color: gray;
+}
+.index1:hover{
+    background-color: aqua;
+}
+.index2:hover{
+    background-color: red;
+}
+.index3:hover{
+    background-color: rgb(226, 148, 2);
+}
+.index4:hover{
+    background-color: green;
+}
+.index8 ,.index5{
+    width: 220px;
+}
+
+
+/* -----------green2 {green2 m is in content.jsv} styling-------- */
+
+
+.green2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 56, 13, 0.997);
+    padding-left: 86px;
+    padding-right: 86px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
+@media all and (max-width:700px){
+    .green2{
+       border-radius: 20px;
+       padding: 10px 30%;
+    }
+}
+.green2 button{
+    background-color:  rgba(1, 56, 13, 0.877);
+    border: none;
+
+}
+.green2 img{
+    height: 40px;
+}
+.green2 p{
+    color: white;
+    font-size: 15px;
+}
+
+
+/* --------styling footer ------ */ 
+
+
+footer{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin: 4px 0px 0px 0px;
+    padding: 40px 0px;
+    background-color: white;
+}
+footer button{
+    padding: 6px 6px ; 
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px gray;
+    transition: box-shadow 0.3s ease-in-out;
+}
+footer button img{
+    width: 30px;
+    height: 30px;
+    /* background-color: blue; */
+}
+footer button:hover{
+    background-color: grey;
+}
+.closure{
+    font-size: 13.5px;
+    grid-row: 2/2;
+    grid-column: 1/5;
+    text-align: center;
+}
